@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FC5731"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/tvAppName"
+        style="@style/h3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:drawablePadding="6dp"
+        android:text="DienMayDo-Store"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ellipse"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/ellips"
+        app:layout_constraintBottom_toBottomOf="@id/guidelineEllipseBottom"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="@id/guidelineEllipseRight"
+        app:layout_constraintStart_toStartOf="@id/guidelineEllipseLeft"
+        app:layout_constraintTop_toTopOf="@id/guidelineEllipseTop" />
+
+    <TextView
+        android:id="@+id/tvRightAddressForShopping"
+        style="@style/h4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tvRightAddressMargin"
+        android:gravity="center"
+        android:text="Hệ Thống Cửa hàng\n Điện Máy Đỏ"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@id/ellipse"
+        app:layout_constraintEnd_toEndOf="@id/ellipse"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="@id/ellipse"
+        app:layout_constraintTop_toTopOf="@id/guidelineLeftTexture"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvQuality"
+        style="@style/h2"
+        app:layout_constraintStart_toStartOf="@id/tvRightAddressForShopping"
+        app:layout_constraintEnd_toEndOf="@id/tvRightAddressForShopping"
+        app:layout_constraintTop_toBottomOf="@id/tvRightAddressForShopping"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textSize="14dp"
+        android:layout_marginTop="13dp"
+        android:text="@string/diachi"
+        android:textColor="@color/white"
+        />
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/circular"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        app:layout_constraintStart_toStartOf="@id/tvQuality"
+        app:layout_constraintEnd_toEndOf="@id/tvQuality"
+        app:layout_constraintTop_toBottomOf="@id/tvQuality"
+        android:layout_marginTop="50dp"
+        />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineLeftTexture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.33" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineEllipseLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineEllipseRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.85" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineEllipseTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.16" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineEllipseBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.48" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
